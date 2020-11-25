@@ -12,27 +12,27 @@ class Cliente
         string direccion;
         string telefono;
         //indica con cuanto va a pagar el cliente su comida
-        float cantidadPago;
+        double cantidadPago;
 
     public:
 
         //Constructor
         Cliente();
-        Cliente::Cliente(string nombre, string direccion, string telefono, float cantidadPago);
+        Cliente(string nombre, string direccion, string telefono, double cantidadPago);
 
         //declaración get methods
 
         string getNombreCliente();
         string getDireccionCliente();
         string getTelefonoCliente();
-        float getCantidadPago();
+        double getCantidadPago();
 
         // declaración set methods
 
         void setNombreCliente(string _nombreCliente);
         void setDireccionCliente(string _direccionCliente);
         void setTelefonoCliente(string _telefonoCliente);
-        void setCantidadPago(float _cantidadPago);
+        void setCantidadPago(double _cantidadPago);
 
 };
 
@@ -43,7 +43,7 @@ Cliente::Cliente()
     string nombre = " ";
     string direccion = " ";
     string telefono = " ";
-    float cantidadPago = 0.0;
+    double cantidadPago = 0.0;
 }
 
 //modelacion get methods
@@ -63,7 +63,7 @@ string Cliente::getTelefonoCliente()
     return telefono;
 }
 
-float Cliente::getCantidadPago()
+double Cliente::getCantidadPago()
 {
     return cantidadPago;
 }
@@ -85,7 +85,7 @@ void Cliente::setDireccionCliente(string _direccionCliente)
     direccion = _direccionCliente;
 }
 
-void Cliente::setCantidadPago(float _cantidadPago)
+void Cliente::setCantidadPago(double _cantidadPago)
 {
     cantidadPago = _cantidadPago;
 }
