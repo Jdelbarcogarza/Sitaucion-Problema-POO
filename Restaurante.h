@@ -73,6 +73,7 @@ class Restaurante
         return tipoDeComida;
     }
 
+    
 
     //Se crean los set methods
     void Restaurante::setNombreRestaurante(string _nombreResturante)
@@ -95,5 +96,6 @@ class Restaurante
         tipoDeComida = _tipoDeComidaRestaurante;
     }
 
+    
 
 #endif /*Restaurante_h*/
